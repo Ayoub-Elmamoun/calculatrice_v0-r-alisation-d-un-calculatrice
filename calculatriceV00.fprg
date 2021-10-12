@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-12 04:17:11 AM"/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC1IVDVSMVFOOzIwMjEtMTAtMTI7MDE6Mjg6NTYgQU07MzE5Mg=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC1IVDVSMVFOOzIwMjEtMTAtMTI7MDQ6MTc6MTEgQU07MzszMjk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NUM1" type="Real" array="False" size=""/>
+            <declare name="NUM2" type="Real" array="False" size=""/>
+            <declare name="choix" type="String" array="False" size=""/>
+            <declare name="add" type="Real" array="False" size=""/>
+            <declare name="Sub" type="Real" array="False" size=""/>
+            <declare name="mul" type="Real" array="False" size=""/>
+            <declare name="div" type="Real" array="False" size=""/>
+            <output expression="&quot;demande d'enter 1er nombre&quot;" newline="True"/>
+            <input variable="NUM1"/>
+            <output expression="&quot;demande d'entr&#233; deuxieme nombre&quot;" newline="True"/>
+            <input variable="NUM2"/>
+            <output expression="&quot;assign les variable avec ses valeurs&quot;" newline="True"/>
+            <output expression="&quot;demande de choisir une operation&quot;" newline="True"/>
+            <input variable="choix"/>
+            <if expression="choix1">
+                <then>
+                    <output expression="add" newline="True"/>
+                </then>
+                <else>
+                    <if expression="choix2">
+                        <then>
+                            <output expression="sub" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="choix3">
+                                <then>
+                                    <output expression="mul" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="div" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
